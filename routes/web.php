@@ -2,5 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\MyController;
 
-Route::resource('post',PostController::class);
+// Resource Route
+//Route::resource('post',PostController::class);
+// Custom Routes
+
+Route::get('/home',[PostController::class,'show_my_view']);
+
+Route::get('post/{id}/{name}/{password}',[PostController::class,'show_post']);
+
+Route::get('/My',[MyController::class,'MyControllerFunction']);

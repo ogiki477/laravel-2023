@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class PupilController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('index');
+        //
     }
 
     /**
@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return  "This is the Create Resource";
+        //
     }
 
     /**
@@ -27,7 +27,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-      
+        //
     }
 
     /**
@@ -35,7 +35,7 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        return "This is ". $id;
+        //
     }
 
     /**
@@ -43,7 +43,7 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        return "This is the Edit ". $id;
+        //
     }
 
     /**
@@ -61,20 +61,4 @@ class PostController extends Controller
     {
         //
     }
-
-
-
-
-// Custom Functions for Controller 
-
-  public function show_my_view()
-{
-    return view('home');
-}
-
-public function show_post($id,$name,$password)
-{
-    return view('post',compact('id', 'name', 'password'));
-}
-
 }
