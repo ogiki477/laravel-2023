@@ -63,8 +63,6 @@ class PostController extends Controller
     }
 
 
-
-
 // Custom Functions for Controller 
 
   public function show_my_view()

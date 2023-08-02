@@ -10,4 +10,11 @@ class MyController extends Controller
 
         return view('index');
     }
+
+
+    public function show_post($id,$password,$name){
+
+        return view('home',compact('id', 'password', 'name'));
+    }
 }
+
