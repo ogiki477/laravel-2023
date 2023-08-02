@@ -16,5 +16,11 @@ class MyController extends Controller
 
         return view('home',compact('id', 'password', 'name'));
     }
+
+
+    public function index(){
+
+        return view('index');
+    }
 }
 

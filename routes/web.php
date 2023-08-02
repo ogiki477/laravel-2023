@@ -14,5 +14,9 @@ Route::get('post/{id}/{name}/{password}',[PostController::class,'show_post']);
 
 Route::get('/My',[MyController::class,'MyControllerFunction']);
 
-
 Route::get('posted/{id}/{password}/{name}',[MyController::class,'show_post']);
+
+
+//routes for testing the blade layouts @section and @extends
+Route::get('/index',[MyController::class,'index']);
+Route::get('/contact',[PostController::class,'contact']);

@@ -75,4 +75,9 @@ public function show_post($id,$name,$password)
     return view('post',compact('id', 'name', 'password'));
 }
 
+public function contact(){
+    $people = ['Moses', 'Omo','Mark'];
+    return view('contact',compact('people'));
+}
+
 }
